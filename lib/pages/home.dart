@@ -1,10 +1,11 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_flutter/pages/calls/calls.dart';
-import 'package:whatsapp_clone_flutter/pages/main_chats/main_chats.dart';
-import 'package:whatsapp_clone_flutter/pages/status/status.dart';
+import 'package:whatsapp_clone_flutter/pages/home_screens/calls.dart';
+import 'package:whatsapp_clone_flutter/pages/home_screens/main_chats.dart';
+import 'package:whatsapp_clone_flutter/pages/home_screens/status.dart';
 import 'package:whatsapp_clone_flutter/utils/constants.dart';
+import 'package:whatsapp_clone_flutter/widgets/coming_soon_dialog.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({Key? key}) : super(key: key);
@@ -70,15 +71,35 @@ class _HomeWidgetState extends State<HomeWidget> {
                     },
                     onSelected: (value) {
                       if (value == 0) {
-                        comingSoonDialog(context);
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return CominSoonDialog();
+                            });
                       } else if (value == 1) {
-                        comingSoonDialog(context);
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return CominSoonDialog();
+                            });
                       } else if (value == 2) {
-                        comingSoonDialog(context);
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return CominSoonDialog();
+                            });
                       } else if (value == 3) {
-                        comingSoonDialog(context);
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return CominSoonDialog();
+                            });
                       } else if (value == 4) {
-                        comingSoonDialog(context);
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return CominSoonDialog();
+                            });
                       }
                     },
                   ),
@@ -140,25 +161,5 @@ class _HomeWidgetState extends State<HomeWidget> {
         ),
       ),
     );
-  }
-
-  Future<dynamic> comingSoonDialog(BuildContext context) {
-    return showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return Dialog(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-            backgroundColor: Colors.white,
-            child: SizedBox(
-              height: kHeight(context) / 8,
-              child: Center(
-                  child: Text(
-                "Comming Soon!....🥳",
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-              )),
-            ),
-          );
-        });
   }
 }

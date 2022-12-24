@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_flutter/pages/chatScreen/chat_screen.dart';
+import 'package:whatsapp_clone_flutter/pages/chat/chat_screen.dart';
 import 'package:whatsapp_clone_flutter/utils/constants.dart';
 import 'package:whatsapp_clone_flutter/utils/data.dart';
 
@@ -24,8 +24,13 @@ class MainChatWidget extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return InkWell(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => ChatScreenWidget()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => ChatScreenWidget(
+                            profileImage: imgList[index],
+                            name: nameList[index],
+                          )));
             },
             child: ListTile(
               title: Text(
@@ -36,14 +41,14 @@ class MainChatWidget extends StatelessWidget {
               leading: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(300)),
                 child: FadeInImage(
-                  placeholder: AssetImage('assets/profile2.png'),
+                  placeholder: AssetImage('assets/profile.png'),
                   height: 95,
                   width: 56,
                   image: NetworkImage(imgList[index]),
                   fit: BoxFit.cover,
                   imageErrorBuilder: (context, url, error) {
                     return Image(
-                      image: AssetImage('assets/profile2.png'),
+                      image: AssetImage('assets/profile.png'),
                       fit: BoxFit.cover,
                     );
                   },

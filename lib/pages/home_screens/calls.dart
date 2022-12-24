@@ -93,14 +93,14 @@ class _CallsWidgetState extends State<CallsWidget> {
                     leading: ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(300)),
                       child: FadeInImage(
-                        placeholder: AssetImage('assets/profile2.png'),
+                        placeholder: AssetImage('assets/profile.png'),
                         height: 95,
                         width: 56,
                         image: NetworkImage(imgList[index]),
                         fit: BoxFit.cover,
                         imageErrorBuilder: (context, url, error) {
                           return Image(
-                            image: AssetImage('assets/profile2.png'),
+                            image: AssetImage('assets/profile.png'),
                             fit: BoxFit.cover,
                           );
                         },
