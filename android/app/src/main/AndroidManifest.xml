@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.whatsapp_clone_flutter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
    <application
-        android:label="whatsapp_clone_flutter"
+        android:label="WhatsApp Clone"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
