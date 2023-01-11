@@ -2,7 +2,7 @@
 
 ![Main chat](screenshots/chat.png)![status](screenshots/status.png)
 
-<img src="screenshots/status.png" height='600px' />
+<img src="screenshots/status.png" height='600px' /><img src="screenshots/status.png" height='600px' />
 
 This project is a starting point for a Flutter application.
 
