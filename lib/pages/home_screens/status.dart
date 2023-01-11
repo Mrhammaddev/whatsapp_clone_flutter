@@ -32,14 +32,14 @@ class _StatusWidgetState extends State<StatusWidget> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.all(Radius.circular(300)),
                           child: FadeInImage(
-                            placeholder: AssetImage('assets/me.jpeg'),
+                            placeholder: AssetImage('assets/profile.png'),
                             height: 95,
                             width: 53,
-                            image: AssetImage('assets/me.jpeg'),
+                            image: AssetImage('assets/profile.png'),
                             fit: BoxFit.cover,
                             imageErrorBuilder: (context, url, error) {
                               return Image(
-                                image: AssetImage('assets/me.jpeg'),
+                                image: AssetImage('assets/profile.png'),
                                 fit: BoxFit.cover,
                               );
                             },
