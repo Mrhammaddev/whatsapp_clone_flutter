@@ -1,8 +1,6 @@
 # WhatsApp Clone Flutter
 
-## Getting Started
-
-![Main chat](assets/chat_bg.png)
+![Main chat](screenshots/chat.png)![status](screenshots/status.png)
 
 This project is a starting point for a Flutter application.
 
