@@ -1,16 +1,7 @@
 # WhatsApp Clone Flutter
 
-![Main chat](screenshots/chat.png)![status](screenshots/status.png)
+##📷Screenshots
 
-<img src="screenshots/status.png" height='600px' /><img src="screenshots/status.png" height='600px' />
+<img src="screenshots/chat.png" height='600px' />     <img src="screenshots/status.png" height='600px' />     <img src="screenshots/calls.png" height='600px' />
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="screenshots/messages.png" height='600px' />     <img src="screenshots/message_dropdown.png" height='600px' />
